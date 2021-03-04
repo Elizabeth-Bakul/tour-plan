@@ -491,8 +491,16 @@ template {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 576px;
+    max-width: 575px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
     width: 92%;
+  }
+  .logo {
+    width: 99px;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
@@ -516,12 +524,6 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
-  }
-}
-
-@media (max-width: 576px) {
-  .logo {
-    width: 99px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -817,7 +817,7 @@ template {
   top: 0;
   height: 100%;
   border: none;
-  min-width: 65px;
+  width: 65px;
   background-color: #ec1f46;
   color: #ffffff;
   font-weight: bold;
@@ -982,6 +982,10 @@ template {
   overflow: hidden;
 }
 
+.card:hover {
+  transform: translateY(-7px);
+}
+
 .card::before {
   content: '';
   position: absolute;
@@ -1016,6 +1020,7 @@ template {
 }
 
 .card__button {
+  max-width: 111px;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -1026,6 +1031,9 @@ template {
   background-color: #ec1f46;
   border-radius: 4px;
   cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media (max-width: 1200px) {
@@ -1290,6 +1298,15 @@ template {
   .card {
     max-width: 100%;
     width: 100%;
+  }
+  .card:nth-child(2) {
+    order: 2;
+  }
+  .card:nth-child(3) {
+    order: 1;
+  }
+  .card:nth-child(4) {
+    order: 3;
   }
 }
 /*# sourceMappingURL=style.css.map */

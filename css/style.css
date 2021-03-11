@@ -1081,9 +1081,15 @@ template {
   .reviews-slider__item {
     width: 85%;
   }
+  .activities-wrapper {
+    flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
   .card {
-    width: 24%;
-    height: 170px;
+    width: 48%;
+    height: 255px;
   }
 }
 
@@ -1129,16 +1135,6 @@ template {
     font-size: 30px;
     line-height: 38px;
     margin-bottom: 50px;
-  }
-  .activities-wrapper {
-    flex-wrap: wrap;
-  }
-  .activities__card {
-    margin-bottom: 20px;
-  }
-  .card {
-    width: 100%;
-    height: 255px;
   }
 }
 

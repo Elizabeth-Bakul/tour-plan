@@ -744,6 +744,10 @@ template {
   overflow: hidden;
 }
 
+.map iframe {
+  width: 100%;
+}
+
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
@@ -803,7 +807,7 @@ template {
   height: 100%;
   border: none;
   padding-left: 33px;
-  padding-right: 20px;
+  padding-right: 70px;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;

@@ -790,14 +790,16 @@ template {
 }
 
 .subscribe {
+  position: relative;
   width: 350px;
   height: 55px;
   border-radius: 4px;
   overflow: hidden;
-  display: flex;
 }
 
 .subscribe__input {
+  position: absolute;
+  width: 100%;
   height: 100%;
   border: none;
   padding-left: 33px;
@@ -807,18 +809,23 @@ template {
   font-size: 14px;
   line-height: 18px;
   color: #BDBDBD;
-  flex-grow: 2.5;
 }
 
 .subscribe__button {
-  flex-grow: 0.5;
-  min-width: 65px;
+  position: absolute;
   right: 0;
   top: 0;
   height: 100%;
   border: none;
+  min-width: 65px;
   background-color: #ec1f46;
   color: #ffffff;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .reviews {
@@ -857,6 +864,7 @@ template {
   height: 47px;
   background-image: url(../img/quote-left.svg);
   background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .reviews-slider__item::after {
@@ -868,6 +876,7 @@ template {
   height: 47px;
   background-image: url(../img/quote-right.svg);
   background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .reviews-slider__button {
@@ -1240,13 +1249,16 @@ template {
   }
   .reviews {
     padding-bottom: 50px;
-    max-height: 670px;
   }
   .reviews-slider__item {
     min-width: 279px;
     max-width: 579px;
     padding: 0 30px 30px;
     width: 85%;
+  }
+  .reviews-slider__text {
+    max-height: 180px;
+    oveflow-y: auto;
   }
   .reviews-slider__button {
     top: 32px;

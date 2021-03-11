@@ -130,55 +130,56 @@
         </div>
         <!-- /.hotel-info -->
         <div class="hotel-grid">
-          <div class="slider hotel__slider">
-            <!-- Slider main container -->
-            <div class="swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__img"
-                    src="img/hotel-photo1.jpg"
-                    alt="slide"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__img"
-                    src="img/hotel-photo2.jpg"
-                    alt="slide"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__img"
-                    src="img/hotel-photo3.jpg"
-                    alt="slide"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__img"
-                    src="img/hotel-photo4.jpg"
-                    alt="slide"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__img"
-                    src="img/hotel-photo5.jpg"
-                    alt="slide"
-                  />
-                </div>
+          <!-- Slider main container -->
+          <div class="swiper-container hotel-slider hotel__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="hotel-slider__img"
+                  src="img/hotel-photo1.jpg"
+                  alt="slide"
+                />
               </div>
-              <!-- If we need navigation buttons -->
-              <button class="slider-button slider-button__prev"></button>
-              <button class="slider-button slider-button__next"></button>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="hotel-slider__img"
+                  src="img/hotel-photo2.jpg"
+                  alt="slide"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="hotel-slider__img"
+                  src="img/hotel-photo3.jpg"
+                  alt="slide"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="hotel-slider__img"
+                  src="img/hotel-photo4.jpg"
+                  alt="slide"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="hotel-slider__img"
+                  src="img/hotel-photo5.jpg"
+                  alt="slide"
+                />
+              </div>
             </div>
-            <!-- /.swiper-container -->
+            <!-- If we need navigation buttons -->
+            <button
+              class="hotel-slider__button hotel-slider__button--prev"
+            ></button>
+            <button
+              class="hotel-slider__button hotel-slider__button--next"
+            ></button>
           </div>
-          <!-- /.slider-->
+          <!-- /.swiper-container -->
           <div class="hotel-right">
             <div class="booking">
               <div class="booking__info">
@@ -237,31 +238,224 @@
         <!-- /.hotel-grid -->
       </div>
     </section>
-    <!--
-    <section  class="parallax-window" data-parallax="scroll" data-image-src="img/newsletter_background-image.jpeg" data-speed="0.2">
+    <section
+      class="parallax-window"
+      data-parallax="scroll"
+      data-image-src="img/newsletter_background-image.jpeg"
+      data-speed="0.2"
+    >
       <div class="newsletter">
         <div class="newsletter-wrapper">
-        <h2 class="newsletter-title newsletter__title">
-          subscribe to our
-          <span class="newsletter-title__strong">Newsletter</span>
-        </h2>
-        <form action="#" class="subscribe newsletter__subscribe">
-          <input
-            type="text"
-            class="subscribe__input"
-            placeholder="Your email address"
-          />
-          <button class="subscribe__button">Send</button>
-        </form>
-      </div>
+          <h2 class="newsletter-title newsletter__title">
+            subscribe to our
+            <span class="newsletter-title__strong">Newsletter</span>
+          </h2>
+          <form action="#" class="subscribe newsletter__subscribe">
+            <input
+              type="text"
+              class="subscribe__input"
+              placeholder="Your email address"
+            />
+            <button class="subscribe__button">Send</button>
+          </form>
+        </div>
       </div>
       <!-- /.newsletter-wrapper -->
-    <!--</section>
+    </section>
     <section class="reviews">
       <div class="container">
-        <h2 class="section-title">What people think about us</h2>
+        <h2 class="reviews__title">What people think about us</h2>
+        <div class="swiper-container reviews-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="img/reviews-avatar1.jpeg"
+                    alt="Photo: Megan Fox"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__username">Megan Fox</h3>
+                  <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                  <div class="reviews-slider__rating">
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                  </div>
+                  <!-- /.reviews-slider__rating -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  It was very nice hotel with cleanliness. Staff behavior was
+                  good and polite. They welcome us very well. Issue was only
+                  that Lift was not in working and we were allotted to 3rd floor
+                  and amenities articles were in corner of gallery which were
+                  giving bad feeling. Breakfast was good and support of the
+                  staff was also very nice. Location is not good as per
+                  atmosphere, it is very nearby most of the popular places but
+                  self location in a narrow street is not good. Overall it was a
+                  good experience and could recommend.
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <!-- /.swiper-slide -->
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="img/reviews-avatart2.jpeg"
+                    alt="Photo: Robert Johns"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__username">Robert Johns</h3>
+                  <span class="reviews-slider__date">Stayed 20 Dec, 2017</span>
+                  <div class="reviews-slider__rating">
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                  </div>
+                  <!-- /.reviews-slider__rating -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  Everything was just amazing, huge territory, comfortable
+                  rooms, silence (which was the most important point for us),
+                  live music every evening. One thing upset us a little, we were
+                  not warned that a large group was planned to arrive with an
+                  event. Because of what it was very noisy and the feeling of
+                  comfort that accompanied the entire vacation was gone.
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="img/reviews-avatar3.jpeg"
+                    alt="Photo: Keyoon Hensen"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__username">Keyoon Hensen</h3>
+                  <span class="reviews-slider__date">Stayed 25 Jun, 2019</span>
+                  <div class="reviews-slider__rating">
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                  </div>
+                  <!-- /.reviews-slider__rating -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  It is not the first time to have a rest there, everything is
+                  fine in the hotel, just like previous visits. But with the
+                  beach it starts getting worse and worse. There are not so many
+                  people as from the right and the left. There is generally
+                  pandemonium. But on the beach of the Hilton, right from the
+                  exit of the hotel, it becomes uncomfortable, We opened the
+                  rental of water sports (jet skis, parachute, etc.) there are a
+                  lot of local people, but the worst thing is that you have to
+                  swim between boats and hydrides. On boats, they rush right
+                  over the head, this is all until the first accident. They do
+                  not react to comments at all.
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="img/reviews-avatar4.jpeg"
+                    alt="Photo: Mikea Urrea"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__username">Mikea Urrea</h3>
+                  <span class="reviews-slider__date">Stayed 25 Aug, 2018</span>
+                  <div class="reviews-slider__rating">
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                  </div>
+                  <!-- /.reviews-slider__rating -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  I booked a hotel through the hotel website, and at the same
+                  time became a hiltHi honor. It is in this capacity, and not
+                  through the bookBuk com, weather or travel agency, you need to
+                  book this hotel. As members of the Hilton hotel chain, they
+                  are met separately and registered without queuing separately,
+                  they gave the name of the one that they asked for, and be sure
+                  to book a room with a sea view on 9-12 floors, otherwise the
+                  hotel will not seem so chic. We had breakfast in a distant
+                  restaurant overlooking the lagoon, it is beautiful there and
+                  there is no crowd like in the restaurant in the main building.
+                  The hotel area is huge and immersed in luxury
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="img/reviews-avatar5.jpeg"
+                    alt="Photo: Nick Djagger"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__username">Nick Djagger</h3>
+                  <span class="reviews-slider__date">Stayed 15 Dec, 2020</span>
+                  <div class="reviews-slider__rating">
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                    <img src="img/Star.svg" alt="star" />
+                  </div>
+                  <!-- /.reviews-slider__rating -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  A wonderful hotel, a huge territory, a wonderful kitchen, very
+                  helpful staff, for the convenience of guests, small buses run
+                  around the hotel territory, I didn't really like the Thai
+                  restaurant on the territory of the hotel, and the restaurant
+                  with mixed cuisine is great. The hotel has an excellent gym
+                  with Lai Fitness simulators , although the employee of this
+                  gym asked me not to make noise, although I was during the day,
+                  and the noise was that I lowered the simulator unit and it
+                  clanged loudly. And now the question is brewing about the only
+                  negative of the hotel: live Music plays loudly until late
+                  (until 23 : 30-24: 00), we are already asleep at this time,
+                  why is it impossible to “make noise” in the hall during the
+                  day, and until nightfall it’s not clear for whom “hammering”
+                  in the lobby Music is normal, I even sleep in earplugs for the
+                  first time in my life.
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+          </div>
+          <!-- /.swiper-wrapper -->
+          <button
+            class="reviews-slider__button reviews-slider__button--prev"
+          ></button>
+          <button
+            class="reviews-slider__button reviews-slider__button--next"
+          ></button>
+        </div>
+        <!-- /.reviews-slider -->
       </div>
-    </section> -->
+      <!-- /.container -->
+    </section>
 
     <!-- /.hotel -->
     <script src="js/swiper-bundle.min.js"></script>

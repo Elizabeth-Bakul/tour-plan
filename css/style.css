@@ -800,6 +800,7 @@ template {
 .packages__img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .packages-mainInfo {
@@ -937,10 +938,6 @@ template {
 
 .packages__room {
   margin-bottom: 24px;
-}
-
-.packages__img {
-  object-fit: cover;
 }
 
 .room__text {

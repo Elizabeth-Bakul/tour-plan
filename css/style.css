@@ -939,6 +939,10 @@ template {
   margin-bottom: 24px;
 }
 
+.packages__img {
+  object-fit: cover;
+}
+
 .room__text {
   display: flex;
   align-items: center;

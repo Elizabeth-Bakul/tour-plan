@@ -1,0 +1,154 @@
+.packages
+  padding-top: 40px
+  padding-bottom: 70px
+  &__title
+    margin-bottom: 65px
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase  
+  &-wrapper
+    display: grid
+    grid-template-columns: repeat(3, 31.5%)
+    grid-template-rows: repeat(2, 500px)
+    row-gap: 30px
+    column-gap: 30px
+  &-mainItem
+    grid-column-start: 1
+    grid-column-end: 3
+    display: flex
+    border-radius: 8px
+    overflow: hidden
+    &__photo
+      position: relative
+      width: 51%
+      height: 100%
+    &__sale
+      position: absolute
+      top: 26px
+      left: 0
+      padding: 8px 12px
+      font-style: normal
+      font-weight: 600
+      font-size: 12px
+      line-height: 15px
+      color: $light
+      background-color: $primary
+  &__img
+    width: 100%
+    height: 100%
+  &-mainInfo
+    max-width: 360px
+    display: flex
+    flex-direction: column
+    padding-top: 46px
+    padding-bottom: 30px
+    padding-right: 21px
+    padding-left: 44px
+    color: $light
+    background-color: $dark
+  &__ht
+    margin-bottom: 27px
+  &__rating
+    margin-bottom: 6px
+    img
+      width: 6px
+      height: 6px
+  &__mainhotelTitle
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+  &__text
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 160.6%
+    margin-bottom: 34px
+  &__mainRoom
+    margin-bottom: 37px
+  &-order
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+  &__price
+    display: flex
+    flex-direction: column
+    margin-bottom: 5px
+  &__start
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 18px
+    text-decoration-line: line-through
+    margin-bottom: 5px
+  &__pricetag
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 30px
+  &__button
+    max-width: 120px;
+    height: 40px
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    padding: 11px 26px;
+    border: none;
+    background-color: #ec1f46;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  &-item
+    display: flex
+    flex-direction: column
+    border-radius: 8px
+    overflow: hidden
+  &-info 
+    display: flex
+    flex-direction: column
+    color: $light
+    max-height: 50%
+    background-color: $dark
+    padding: 30px 21px 25px 32px
+  &-photo
+    width: 100%
+    height: 250px
+    position: relative
+  &__sale
+    position: absolute
+    top: 26px
+    left: 0
+    padding: 4px 9px
+    font-style: normal
+    font-weight: 600
+    font-size: 8px
+    line-height: 10px
+    color: $light
+    background-color: $primary
+  &__hotelTitle
+    margin-bottom: 23px
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+  &__room
+    margin-bottom: 24px
+.room
+  &__text
+    display: flex
+    align-items: center
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    margin-bottom: 11px
+    &:nth-child(3)
+      margin-bottom: 0
+  &__description
+    margin-left: 14px

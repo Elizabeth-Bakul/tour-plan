@@ -774,7 +774,7 @@ template {
 }
 
 .packages-main-info {
-  max-width: 360px;
+  flex: 0 1 53%;
   display: flex;
   flex-direction: column;
   padding-top: 46px;
@@ -795,8 +795,9 @@ template {
 
 .packages-main-item__photo {
   position: relative;
-  width: 350px;
   height: 100%;
+  display: flex;
+  flex: 0 1 49%;
 }
 
 .packages-main-item__sale {
@@ -1342,11 +1343,8 @@ template {
     grid-template-columns: repeat(2, 47%);
     grid-template-rows: minmax(500px, min-content) minmax(500px, min-content) minmax(500px, min-content);
   }
-  .packages-main-item__photo {
-    width: 350px;
-  }
   .packages-main-info {
-    max-width: calc(100% - (350px));
+    flex-basis: 52%;
     justify-content: space-between;
     padding-left: 30px;
   }
@@ -1428,11 +1426,8 @@ template {
     line-height: 38px;
     margin-bottom: 50px;
   }
-  .packages-main-item__photo {
-    width: 250px;
-  }
   .packages-main-info {
-    max-width: calc(100% - (250px));
+    flex-basis: 51%;
   }
 }
 

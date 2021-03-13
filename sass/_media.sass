@@ -60,11 +60,8 @@
     &-wrapper
       grid-template-columns: repeat(2, 47%)
       grid-template-rows: minmax(500px, min-content) minmax(500px, min-content) minmax(500px, min-content)
-    &-main-item
-      &__photo
-        width: 350px
     &-main-info
-      max-width: calc(100% - (350px))
+      flex-basis:  52%
       justify-content: space-between
       padding-left: 30px
     &__text
@@ -129,11 +126,8 @@
       font-size: 30px
       line-height: 38px
       margin-bottom: 50px
-    &-main-item
-      &__photo
-        width: 250px
     &-main-info
-      max-width: calc(100% - (250px))
+      flex-basis: 51%
 @media (max-width: 576px )
   .container
     width: 92%

@@ -760,17 +760,32 @@ template {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .packages-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 31.5%);
-  grid-template-rows: repeat(2, 500px);
+  grid-template-rows: minmax(500, min-content) minmax(500, min-content);
   row-gap: 30px;
   column-gap: 30px;
 }
 
-.packages-mainItem {
+.packages-main-info {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 46px;
+  padding-bottom: 30px;
+  padding-right: 21px;
+  padding-left: 44px;
+  color: #ffffff;
+  background-color: #0a223d;
+}
+
+.packages-main-item {
   grid-column-start: 1;
   grid-column-end: 3;
   display: flex;
@@ -778,13 +793,13 @@ template {
   overflow: hidden;
 }
 
-.packages-mainItem__photo {
+.packages-main-item__photo {
   position: relative;
-  width: 51%;
+  width: 350px;
   height: 100%;
 }
 
-.packages-mainItem__sale {
+.packages-main-item__sale {
   position: absolute;
   top: 26px;
   left: 0;
@@ -803,18 +818,6 @@ template {
   object-fit: cover;
 }
 
-.packages-mainInfo {
-  max-width: 360px;
-  display: flex;
-  flex-direction: column;
-  padding-top: 46px;
-  padding-bottom: 30px;
-  padding-right: 21px;
-  padding-left: 44px;
-  color: #ffffff;
-  background-color: #0a223d;
-}
-
 .packages__ht {
   margin-bottom: 27px;
 }
@@ -828,11 +831,14 @@ template {
   height: 6px;
 }
 
-.packages__mainhotelTitle {
+.packages__main-hotel-title {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .packages__text {
@@ -843,7 +849,7 @@ template {
   margin-bottom: 34px;
 }
 
-.packages__mainRoom {
+.packages__main-room {
   margin-bottom: 37px;
 }
 
@@ -904,9 +910,11 @@ template {
   display: flex;
   flex-direction: column;
   color: #ffffff;
-  max-height: 50%;
+  max-height: 90%;
   background-color: #0a223d;
   padding: 30px 21px 25px 32px;
+  height: calc(100% - (250px));
+  justify-content: space-between;
 }
 
 .packages-photo {
@@ -928,12 +936,15 @@ template {
   background-color: #ec1f46;
 }
 
-.packages__hotelTitle {
+.packages__hotel-title {
   margin-bottom: 23px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .packages__room {
@@ -1067,6 +1078,7 @@ template {
   background-color: #fff;
   border-radius: 8px;
   padding: 0 62px 30px;
+  z-index: 0;
 }
 
 .reviews-slider__item::before {
@@ -1078,7 +1090,7 @@ template {
   height: 47px;
   background-image: url(../img/quote-left.svg);
   background-repeat: no-repeat;
-  z-index: 1;
+  z-index: -1;
 }
 
 .reviews-slider__item::after {
@@ -1090,7 +1102,7 @@ template {
   height: 47px;
   background-image: url(../img/quote-right.svg);
   background-repeat: no-repeat;
-  z-index: 1;
+  z-index: -1;
 }
 
 .reviews-slider__button {
@@ -1164,6 +1176,7 @@ template {
   font-size: 12px;
   line-height: 160%;
   text-align: justify;
+  z-index: 1;
 }
 
 .activities {
@@ -1309,6 +1322,9 @@ template {
   .newsletter-wrapper {
     width: 92%;
   }
+  .reviews {
+    max-height: 700px;
+  }
   .reviews-slider__item {
     width: 85%;
   }
@@ -1324,11 +1340,13 @@ template {
   }
   .packages-wrapper {
     grid-template-columns: repeat(2, 47%);
-    grid-template-rows: repeat(3, 500px);
+    grid-template-rows: minmax(500px, min-content) minmax(500px, min-content) minmax(500px, min-content);
   }
-  .packages-mainInfo {
-    max-width: 480px;
-    width: 50%;
+  .packages-main-item__photo {
+    width: 350px;
+  }
+  .packages-main-info {
+    max-width: calc(100% - (350px));
     justify-content: space-between;
     padding-left: 30px;
   }
@@ -1384,7 +1402,7 @@ template {
   .packages-wrapper {
     column-gap: 15px;
   }
-  .packages-mainInfo {
+  .packages-main-info {
     padding-top: 20px;
   }
   .packages-info {
@@ -1409,6 +1427,12 @@ template {
     font-size: 30px;
     line-height: 38px;
     margin-bottom: 50px;
+  }
+  .packages-main-item__photo {
+    width: 250px;
+  }
+  .packages-main-info {
+    max-width: calc(100% - (250px));
   }
 }
 
@@ -1521,10 +1545,6 @@ template {
     padding: 0 30px 30px;
     width: 85%;
   }
-  .reviews-slider__text {
-    max-height: 180px;
-    oveflow-y: auto;
-  }
   .reviews-slider__button {
     top: 32px;
   }
@@ -1537,6 +1557,10 @@ template {
     right: 50%;
     transform: translate(50%, 0);
     margin-right: -65px;
+  }
+  .reviews-slider__text {
+    max-height: 150px;
+    overflow-y: auto;
   }
   .reviews__title {
     font-size: 18px;
@@ -1567,19 +1591,19 @@ template {
   }
   .packages-wrapper {
     grid-template-columns: repeat(1, 98%);
-    grid-template-rows: repeat(5, 520px);
+    grid-template-rows: minmax(500px, min-content) minmax(500px, min-content) minmax(500px, min-content) minmax(500px, min-content) minmax(500px, min-content);
   }
-  .packages-mainItem {
+  .packages-main-item {
     grid-column-start: 1;
     grid-column-end: 2;
     flex-direction: column;
   }
-  .packages-mainItem__photo {
+  .packages-main-item__photo {
     width: 100%;
-    height: 50%;
+    height: 250px;
     object-fit: cover;
   }
-  .packages-mainInfo {
+  .packages-main-info {
     max-width: 100%;
     width: 100%;
   }
@@ -1592,18 +1616,18 @@ template {
   .packages__ht {
     margin-bottom: 20px;
   }
-  .packages__mainRoom {
+  .packages__main-room {
     margin-bottom: 25px;
   }
   .packages-photo {
-    height: 52%;
+    height: 250px;
   }
   .packages-info {
-    max-height: 52%;
+    max-height: 80%;
     padding-top: 20px;
     padding-bottom: 24px;
   }
-  .packages__hotelTitle {
+  .packages__hotel-title {
     margin-bottom: 15px;
   }
   .packages__room {

@@ -1398,6 +1398,10 @@ template {
   margin-bottom: 23px;
   height: 123px;
   resize: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__button {

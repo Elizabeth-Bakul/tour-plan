@@ -56,6 +56,8 @@
   &__link
     text-decoration: none
     color: inherit
+    +hover
+      color: $primary
   &__title
     font-style: normal
     font-weight: bold
@@ -140,8 +142,14 @@
     &__link
       text-decoration: none
       color: $light
+      +hover
+        color: $primary
     &__item
       font-style: normal
       font-weight: normal
       font-size: 12px
       line-height: 15px
+  &__sl
+    transition: 0.3S ease
+    +hover
+      transform: scale(1.2)

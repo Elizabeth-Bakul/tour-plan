@@ -404,6 +404,10 @@ template {
   line-height: 18px;
 }
 
+.navbar-menu__link:not([disabled]):hover {
+  color: #ec1f46;
+}
+
 .search {
   display: flex;
   position: relative;
@@ -445,6 +449,11 @@ template {
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
+  transition: 0.3S ease;
+}
+
+.user__avatar:not([disabled]):hover {
+  transform: scale(1.2);
 }
 
 .user__name {
@@ -452,14 +461,25 @@ template {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+  transition: 0.3S ease;
+}
+
+.user__name:not([disabled]):hover {
+  color: #ec1f46;
+  transform: scale(1.2);
 }
 
 .logo {
   width: 177px;
+  transition: 0.3S ease;
 }
 
 .logo__image {
   display: block;
+}
+
+.logo:not([disabled]):hover {
+  transform: scale(1.2);
 }
 
 .breadcrumb-list {
@@ -483,6 +503,10 @@ template {
 .breadcrumb-list__link {
   text-decoration: none;
   color: inherit;
+}
+
+.breadcrumb-list__link:not([disabled]):hover {
+  text-decoration: underline;
 }
 
 .hotel {
@@ -1347,6 +1371,10 @@ template {
   color: inherit;
 }
 
+.footer__link:not([disabled]):hover {
+  color: #ec1f46;
+}
+
 .footer__title {
   font-style: normal;
   font-weight: bold;
@@ -1455,11 +1483,23 @@ template {
   color: #ffffff;
 }
 
+.footer-bottom__link:not([disabled]):hover {
+  color: #ec1f46;
+}
+
 .footer-bottom__item {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+}
+
+.footer__sl {
+  transition: 0.3S ease;
+}
+
+.footer__sl:not([disabled]):hover {
+  transform: scale(1.2);
 }
 
 @media (max-width: 1200px) {

@@ -9,6 +9,11 @@
   .packages
     &-main-info
       flex-basis:  54%
+  .footer
+    &-bottom
+      &__ul
+        margin-right: auto
+        margin-left: auto
 @media (max-width: 992px )
   .container
     width: 92%
@@ -70,6 +75,50 @@
     &__text
       font-size: 12px
       line-height: 18px
+  .footer
+    padding-top: 73px
+    padding-bottom: 33px
+    &-wrapper
+      grid-template-columns: repeat (6, 1fr )
+      grid-gap: 40px
+    &__wrapper
+      margin-bottom: 63px
+    &__logo
+      grid-row: 1/2
+      grid-column: span 2
+    &__social
+      &-network
+        grid-row: 1/2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2/3
+      grid-column: span 2
+      margin-bottom: 20px
+    &__legal 
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__title
+      margin-bottom: 15px
+      &--mb3
+        margin-bottom: 24px
+      &--inline
+        margin-bottom: 0
+    &__contact
+      &-details
+        grid-row: 3
+        grid-column: span 5
+        margin-bottom: 20px
+      &-form
+        grid-row: 4
+        grid-column: span 5
+    &__input
+      flex-basis: 48%
+    &-bottom
+      justify-content: space-between
+      &__ul
+        margin: 0
 
 @media (max-width: 768px )
   .container
@@ -105,7 +154,6 @@
       font-size: 30px
       line-height: 38px
       margin-bottom: 50px
-    
   .packages
     &-wrapper
       column-gap: 15px
@@ -131,6 +179,9 @@
       margin-bottom: 50px
     &-main-info
       flex-basis: 52%
+  .footer
+    &__input
+      flex-basis: 100%
 @media (max-width: 576px )
   .container
     width: 92%
@@ -289,3 +340,64 @@
       font-size: 18px
       line-height: 23px
       margin-bottom: 40px
+  .footer
+    padding-top: 69px
+    padding-bottom: 21px
+    &-wrapper
+      grid-template-columns: 100%
+      column-gap: 0
+      rows-gap: 30px
+    &__wrapper
+      margin-bottom: 30px
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+        display: flex
+        flex-wrap: wrap
+    &__additional
+      grid-row: 4
+      grid-column: 1
+    &__categories
+      grid-row: 5
+      grid-column: 1
+      margin-bottom: 10px
+    &__legal
+      grid-row: 3
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+        margin-bottom: 30px
+      &-form 
+        grid-column: 1
+        grid-row: 7
+    &__button
+      order: 1
+    &__info
+      flex-basis: 100%
+      margin-bottom: 15px
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 14px
+      &--mb3
+        margin-bottom: 15px
+      &--inline
+        flex-basis: 100%
+        margin-bottom: 22px
+    &-bottom
+      flex-wrap: wrap
+      justify-content: flex-start
+      &__ul
+        margin-bottom: 10px
+        flex-basis: 100%
+    &__icon
+      &-wrapper
+        min-width: 32px

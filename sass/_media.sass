@@ -214,15 +214,18 @@
         right: 0
         z-index: 99
     &-bottom
-      display: none
       position: fixed
-      left: 0
+      left: 100%
       right: 0
       bottom: 0
-      top: 78px
+      top: 71px
       padding-top: 30px
+      transition: 0.5s
+      transform: translateX(100%)
+      overflow-y: auto
       &--visible
-        display: block
+        left: 0
+        transform: translateX(0%)
     &-menu
       flex-direction: column
       &__item

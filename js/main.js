@@ -24,3 +24,11 @@ var reviewSlider = new Swiper(".reviews-slider", {
     enabled: true,
   },
 });
+
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  console.log("CLICK");
+  var menu = document.querySelector(".navbar-bottom");
+  menu.classList.toggle("navbar-bottom--visible");
+
+});

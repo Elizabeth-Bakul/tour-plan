@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
@@ -24,7 +24,10 @@
             />
           </a>
 
-          <form action="#" class="search navbar__search">
+          <form
+            action="#"
+            class="search navbar__search navbar__search--mobile--hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -35,7 +38,7 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user">
+          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
             <img
               src="img/user-avatar.jpeg"
               alt="Avatar: Nathan"
@@ -56,6 +59,34 @@
       <nav class="navbar-bottom">
         <div class="container">
           <ul class="navbar-menu">
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <a
+                href="#"
+                class="user navbar__user navbar__user--mobile--visible"
+              >
+                <img
+                  src="img/user-avatar.jpeg"
+                  alt="Avatar: Nathan"
+                  class="user__avatar"
+                />
+                <span class="user__name user__name--light">Nathan</span>
+              </a>
+            </li>
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <form
+                action="#"
+                class="search navbar__search navbar__search--mobile--visible"
+              >
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Search location"
+                />
+                <button class="search__button">
+                  <img src="img/search.svg" alt="Icon: search" />
+                </button>
+              </form>
+            </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link">All Deals</a>
             </li>
@@ -816,13 +847,22 @@ of chamarel"
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="https://www.facebook.com/" class="footer__link footer__sl" target="_blank"
+              <a
+                href="https://www.facebook.com/"
+                class="footer__link footer__sl"
+                target="_blank"
                 ><img src="img/fb.svg" alt="Icon: Facebook"
               /></a>
-              <a href="https://www.youtube.com/" class="footer__link footer__sl" target="_blank"
+              <a
+                href="https://www.youtube.com/"
+                class="footer__link footer__sl"
+                target="_blank"
                 ><img src="img/yt.svg" alt="Icon: Youtube"
               /></a>
-              <a href="https://www.instagram.com" class="footer__link footer__sl" target="_blank"
+              <a
+                href="https://www.instagram.com"
+                class="footer__link footer__sl"
+                target="_blank"
                 ><img src="img/inst.svg" alt="Icon: Instagram"
               /></a>
             </div>
@@ -873,18 +913,18 @@ of chamarel"
                   />
                 </div>
                 <div class="footer-spaj">
-                  <span class="footer_span">Tel (business hours) : </span>
-                  <a href="tel:2691500" class="footer__link">269 1500</a>
+                  <a href="tel:2691500" class="footer__link"
+                    >Tel (business hours) : 269 1500</a
+                  >
                   <br />
-                  <span class="footer_span"
-                    >Tel (hotline) Monday - Saturday:
-                  </span>
-                  <a href="tel:52-56-61-38" class="footer__link">52-56-61-38</a>
-                  <span class="footer_span">(08:00 am – 20:00 pm)</span>
+                  <a href="tel:52-56-61-38" class="footer__link"
+                    >Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am –
+                    20:00 pm)</a
+                  >
                   <br />
-                  <span class="footer_span">Tel (hotline) Sunday: </span>
-                  <a href="tel:52-56-61-38" class="footer__link">52-56-61-38</a>
-                  <span class="footer_span">(08:00 am – 14:00 pm)</span>
+                  <a href="tel:52-56-61-38" class="footer__link"
+                    >Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</a
+                  >
                 </div>
               </li>
               <li class="footer__item">

@@ -249,13 +249,12 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button class="button booking__button">View Other Options</button>
+              <button data-toggle="modal" data-href="#booking-modal" class="button booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
             <div class="map">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15484.668537764894!2d98.29535986847787!3d7.841622199004174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1615310211866!5m2!1sru!2sru"
-                height="213"
                 style="border: 0"
                 allowfullscreen=""
                 loading="lazy"
@@ -524,13 +523,14 @@
             subscribe to our
             <span class="newsletter-title__strong">Newsletter</span>
           </h2>
-          <form action="#" class="subscribe newsletter__subscribe">
+          <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
             <input
               type="text"
               class="subscribe__input"
               placeholder="Your email address"
+              name="email"
             />
-            <button class="subscribe__button">Send</button>
+            <input class="subscribe__button" name="Send1" type="submit" value="Send">
           </form>
         </div>
         <!-- /.newsletter-wrapper -->
@@ -783,11 +783,14 @@ of chamarel"
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper footer__wrapper">
-          <img
+          <a href="#
+          " class="logo">
+        <img
             src="img/vertical-logo.svg"
             alt="Logo: Best Tour Plan"
             class="logo footer__logo"
-          />
+          /></a>
+          
           <div class="footer__list footer__categories">
             <h3 class="footer__title">all categories</h3>
             <ul class="footer__ul">
@@ -944,24 +947,27 @@ of chamarel"
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb3">Send us a message</h3>
-            <form action="#" class="footer__form">
+            <form action="send.php" method="POST" class="footer__form">
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Your Full Name*"
+                name="name"
               />
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Phone Number*"
+                name="phone"
               />
               <textarea
                 cols="30"
                 rows="10"
-                class="footer__message"
+                class="message footer__message"
                 placeholder="Message"
+                name="message"
               ></textarea>
-              <button class="button footer__button" type="submit">Send</button>
+              <input class="button footer__button" type="submit" name="Send2" value="Send">
               <span class="footer__info">* Required Fields</span>
             </form>
           </div>
@@ -989,7 +995,49 @@ of chamarel"
       <!-- /.container -->
     </footer>
     <!-- /footer.footer -->
+    <div class="modal" id="booking-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="Icon: close" >
+        </a>
+        <h3 class="modal__title modal__title--mb3">booking</h3>
+            <form action="send.php" method="POST" class="modal__form">
+              <input
+                type="text"
+                class="input modal__input"
+                placeholder="Your Full Name*"
+                name="name-modal"
+              />
+              <input
+                type="text"
+                class="input modal__input"
+                placeholder="Phone Number*"
+                name="phone-modal"
+              />
+              <input
+                type="text"
+                class="input modal__input"
+                placeholder="Email*"
+                name="email-modal"
+              />
+              <textarea
+                cols="30"
+                rows="10"
+                class="message modal__message"
+                placeholder="Message"
+                name="message-modal"
+              ></textarea>
+              <input class="button modal__button" type="submit" name="Send-modal" value="Send">
+              <span class="modal__info">* Required Fields</span>
+            </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.js"></script>

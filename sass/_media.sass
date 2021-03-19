@@ -17,20 +17,14 @@
 @media (max-width: 992px )
   .container
     width: 92%
-  .booking
-    width: 100%
-  .map
-    width: 100%
   .navbar
     &__search
       margin-left: 47px
   .hotel
+    padding-bottom: 60px
     &-slider
       width: 100%
       margin-right: 0
-    &-right
-      max-width: 350px
-      width: 42%
     &-grid
       flex-direction: column
     &__slider
@@ -41,6 +35,7 @@
       flex-direction: row
   .booking, .map
     width: 49%
+    height: 210px
   .newsletter
     &-wrapper
       max-width: 700px
@@ -49,6 +44,7 @@
     width: 55%
     margin-left: 15px
   .newsletter
+    padding: 92px 0
     &-wrapper
       width: 92%
   .reviews
@@ -57,6 +53,7 @@
       &__item
         width: 85%
   .activities
+    padding-bottom: 70px
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -119,7 +116,10 @@
       justify-content: space-between
       &__ul
         margin: 0
-
+  .modal
+    &__dialog
+      padding-left: 60px
+      padding-right: 60px
 @media (max-width: 768px )
   .container
     max-width: 700px
@@ -182,6 +182,15 @@
   .footer
     &__input
       flex-basis: 100%
+  .modal
+    &__dialog
+      padding-left: 45px
+      padding-right: 45px
+    &__button
+      order: 1
+    &__info
+      flex-basis: 100%
+      margin-bottom: 15px
 @media (max-width: 576px )
   body
     padding-top: 78px
@@ -259,6 +268,8 @@
         height: 1px
         background-color: $text-color
   .hotel
+    padding-top: 8px
+    padding-bottom: 40px
     &-name
       flex-basis: 100%
     &-wrapper
@@ -278,7 +289,7 @@
       height: 180px
     &-right
       flex-direction: column
-      min-height: 450px
+      min-height: 350px
     &__slider
       margin-bottom: 20px
   .stars
@@ -290,6 +301,7 @@
   .map
     max-width: 100%
     width: 100%
+    height: 173px
   .newsletter
     padding-top: 76px
     padding-bottom: 83px
@@ -450,3 +462,11 @@
     &__icon
       &-wrapper
         min-width: 32px
+  .modal
+    position: relative
+    &__dialog
+      margin-right: -50%;
+      padding-left: 20px
+      padding-right: 20px
+      width: 92%
+      max-width: 330px

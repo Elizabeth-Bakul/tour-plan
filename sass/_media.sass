@@ -110,7 +110,7 @@
       &-form
         grid-row: 4
         grid-column: span 5
-    &__input
+    //&__input
       flex-basis: 48%
     &-bottom
       justify-content: space-between
@@ -118,8 +118,7 @@
         margin: 0
   .modal
     &__dialog
-      padding-left: 60px
-      padding-right: 60px
+      padding: 33px 60px
 @media (max-width: 768px )
   .container
     max-width: 700px
@@ -181,11 +180,11 @@
       flex-basis: 52%
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
   .modal
     &__dialog
-      padding-left: 45px
-      padding-right: 45px
+      padding: 33px 30px
     &__button
       order: 1
     &__info
@@ -465,8 +464,6 @@
   .modal
     position: relative
     &__dialog
-      margin-right: -50%;
-      padding-left: 20px
-      padding-right: 20px
+      padding: 33px 20px
       width: 92%
-      max-width: 330px
+      max-width: 100%

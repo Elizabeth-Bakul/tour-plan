@@ -98,6 +98,7 @@ $(document).ready(function () {
       },
       phone_modal: {
         required: "Phone is required",
+        minlength: "The phone number must be 10 digits",
       },
     },
   });
@@ -128,5 +129,8 @@ $(document).ready(function () {
   $("#footer__input-phone").mask('+7(999)999-99-99',
   {
     'translation':{9:{pattern:/[0-9]/, optional: false}},
+  });
+  $("#modal__input-phone").mask("+7(999)999-99-99", {
+    translation: { 9: { pattern: /[0-9]/, optional: false } },
   });
 });

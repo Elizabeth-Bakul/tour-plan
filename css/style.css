@@ -810,6 +810,19 @@ template {
   height: 100%;
 }
 
+.button-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.button__back {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+}
+
 .packages {
   padding-top: 40px;
   padding-bottom: 70px;
@@ -1454,13 +1467,21 @@ template {
 .footer__input {
   width: 100%;
   font-style: normal;
-  font-style-font-weight: normal;
-  font-style-font-size: 12px;
-  font-style-line-height: 15px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.footer__input-main-group {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
 }
 
 .footer__input-group {
-  margin-bottom: 15px;
   flex-basis: 48%;
 }
 
@@ -1878,8 +1899,14 @@ template {
   .packages-main-info {
     flex-basis: 52%;
   }
+  .footer__input-main-group {
+    flex-wrap: wrap;
+  }
   .footer__input-group {
     flex-basis: 100%;
+  }
+  .footer__input-group:first-child {
+    margin-bottom: 15px;
   }
   .modal__dialog {
     padding: 33px 30px;

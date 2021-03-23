@@ -16,7 +16,7 @@
     <header class="navbar navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="https://web-elizabeth.ru/homeworks/lesson-29/" class="logo">
+          <a href="https://web-elizabeth.ru/homeworks/lesson-30/" class="logo">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -116,7 +116,7 @@
       <div class="container">
         <ul class="breadcrumb-list">
           <li class="breadcrumb-list__item">
-            <a href="https://web-elizabeth.ru/homeworks/lesson-29/" class="breadcrumb-list__link">Home</a>
+            <a href="https://web-elizabeth.ru/homeworks/lesson-30/" class="breadcrumb-list__link">Home</a>
           </li>
           <li class="breadcrumb-list__item">
             <a href="#" class="breadcrumb-list__link">Flash Offers</a>
@@ -137,6 +137,9 @@
             <p class="hotel-description hotel-info__description">
               Наш менеджер позванит вам через 5 минут
             </p>
+            <button class="button button__back">
+              <a href="https://web-elizabeth.ru/homeworks/lesson-30/" class="button-link">Вернутся на главную страницу</a>
+            </button>
           </div>
         </div>
         <!-- /.hotel-info -->
@@ -307,7 +310,8 @@
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb3">Send us a message</h3>
             <form action="send.php" method="POST" class="footer__form form">
-              <div class="footer__input-group">
+              <div class="footer__input-main-group">
+                <div class="footer__input-group">
                 <input
                 type="text"
                 class="input footer__input"
@@ -320,12 +324,14 @@
               <div class="footer__input-group">
                 <input
                 type="tel"
-                class="input footer__input"
                 id="footer__input-phone"
+                class="input footer__input"
                 placeholder="Phone Number*"
                 name="phone"
+                minlength="16"
                 required
               />
+              </div>
               </div>
               <textarea
                 cols="30"
@@ -367,6 +373,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/parallax.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

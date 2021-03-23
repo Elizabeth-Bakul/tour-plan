@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
@@ -13,10 +14,10 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body id="body">
-      <header class="navbar navbar--mobile--fixed">
+    <header class="navbar navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="#" class="logo" data-aos="fade-right" data-aos-delay="100">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -25,6 +26,8 @@
           </a>
 
           <form
+            data-aos="fade-right"
+            data-aos-delay="200"
             action="#"
             class="search navbar__search navbar__search--mobile--hidden"
           >
@@ -38,7 +41,12 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+          <a
+            href="#"
+            class="user navbar__user navbar__user--mobile--hidden"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <img
               src="img/user-avatar.jpeg"
               alt="Avatar: Nathan"
@@ -249,7 +257,13 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button data-toggle="modal" data-href="#booking-modal" class="button booking__button">View Other Options</button>
+              <button
+                data-toggle="modal"
+                data-href="#booking-modal"
+                class="button booking__button"
+              >
+                View Other Options
+              </button>
             </div>
             <!-- /.booking -->
             <div class="map">
@@ -271,7 +285,12 @@
       <div class="container">
         <h2 class="packages__title">Other Packages</h2>
         <div class="packages-wrapper">
-          <div class="packages-main-item">
+          <div
+            class="packages-main-item"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             <div class="packages-main-item__photo">
               <img
                 src="img/packages1.jpg"
@@ -329,14 +348,26 @@
                   <strong class="packages__pricetag">$ 8,500</strong>
                 </div>
                 <!--./packages__price-->
-                <button data-toggle="modal" data-href="#booking-modal" class="packages__button">Book Now</button>
+                <button
+                  data-toggle="modal"
+                  data-href="#booking-modal"
+                  class="packages__button"
+                >
+                  Book Now
+                </button>
               </div>
               <!--./packages-order-->
             </div>
             <!--./packages-info-->
           </div>
           <!--./packages-main-item-->
-          <div class="packages-item">
+          <div
+            class="packages-item"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            data-aos-delay="300"
+          >
             <div class="packages-photo">
               <img
                 src="img/packages2.jpeg"
@@ -374,12 +405,24 @@
                   <strong class="packages__pricetag">$ 3,000</strong>
                 </div>
                 <!--./packages__price-->
-                <button class="packages__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
+                <button
+                  class="packages__button"
+                  data-toggle="modal"
+                  data-href="#booking-modal"
+                >
+                  Book Now
+                </button>
               </div>
               <!--./packages-order-->
             </div>
           </div>
-          <div class="packages-item">
+          <div
+            class="packages-item"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            data-aos-delay="100"
+          >
             <div class="packages-photo">
               <img
                 src="img/packages3.jpeg"
@@ -417,12 +460,24 @@
                   <strong class="packages__pricetag">$ 9,500</strong>
                 </div>
                 <!--./packages__price-->
-                <button class="packages__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
+                <button
+                  class="packages__button"
+                  data-toggle="modal"
+                  data-href="#booking-modal"
+                >
+                  Book Now
+                </button>
               </div>
               <!--./packages-order-->
             </div>
           </div>
-          <div class="packages-item">
+          <div
+            class="packages-item"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            data-aos-delay="200"
+          >
             <div class="packages-photo">
               <img
                 src="img/packages4.jpeg"
@@ -460,12 +515,24 @@
                   <strong class="packages__pricetag">$ 2,500</strong>
                 </div>
                 <!--./packages__price-->
-                <button class="packages__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
+                <button
+                  class="packages__button"
+                  data-toggle="modal"
+                  data-href="#booking-modal"
+                >
+                  Book Now
+                </button>
               </div>
               <!--./packages-order-->
             </div>
           </div>
-          <div class="packages-item">
+          <div
+            class="packages-item"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            data-aos-delay="300"
+          >
             <div class="packages-photo">
               <img
                 src="img/packages5.jpeg"
@@ -503,7 +570,13 @@
                   <strong class="packages__pricetag">$ 3,500</strong>
                 </div>
                 <!--./packages__price-->
-                <button class="packages__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
+                <button
+                  class="packages__button"
+                  data-toggle="modal"
+                  data-href="#booking-modal"
+                >
+                  Book Now
+                </button>
               </div>
               <!--./packages-order-->
             </div>
@@ -523,7 +596,11 @@
             subscribe to our
             <span class="newsletter-title__strong">Newsletter</span>
           </h2>
-          <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
+          <form
+            action="send.php"
+            method="POST"
+            class="subscribe newsletter__subscribe"
+          >
             <input
               type="email"
               class="subscribe__input"
@@ -531,7 +608,12 @@
               name="email"
               required
             />
-            <input class="subscribe__button" name="Send1" type="submit" value="Send">
+            <input
+              class="subscribe__button"
+              name="Send1"
+              type="submit"
+              value="Send"
+            />
           </form>
         </div>
         <!-- /.newsletter-wrapper -->
@@ -735,7 +817,11 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img
               src="img/activity1.jpg"
               alt="The curious corner 
@@ -743,37 +829,73 @@ of chamarel"
               class="card__image"
             />
             <h3 class="card__title">The curious corner of chamarel</h3>
-            <button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
+            <button
+              class="card__button"
+              data-toggle="modal"
+              data-href="#booking-modal"
+            >
+              Book Now
+            </button>
           </div>
           <!--/.card-->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
               src="img/activity2.jpg"
               alt="Gymkhana club golf course"
               class="card__image"
             />
             <h3 class="card__title">Gymkhana club golf course</h3>
-            <button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
+            <button
+              class="card__button"
+              data-toggle="modal"
+              data-href="#booking-modal"
+            >
+              Book Now
+            </button>
           </div>
           <!--/.card-->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <img
               src="img/acrivity3.jpg"
               alt="Tamarind falls hiking trip - full day"
               class="card__image"
             />
             <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
-            <button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
+            <button
+              class="card__button"
+              data-toggle="modal"
+              data-href="#booking-modal"
+            >
+              Book Now
+            </button>
           </div>
           <!--/.card-->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
             <img
               src="img/activity4.jpg"
               alt="The blue marine discovery quest"
               class="card__image"
             />
             <h3 class="card__title">The blue marine discovery quest</h3>
-            <button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
+            <button
+              class="card__button"
+              data-toggle="modal"
+              data-href="#booking-modal"
+            >
+              Book Now
+            </button>
           </div>
           <!--/.card-->
         </div>
@@ -784,7 +906,7 @@ of chamarel"
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper footer__wrapper">
-        <img
+          <img
             src="img/vertical-logo.svg"
             alt="Logo: Best Tour Plan"
             class="logo footer__logo"
@@ -946,27 +1068,30 @@ of chamarel"
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb3">Send us a message</h3>
             <form action="send.php" method="POST" class="footer__form form">
-              <div class="footer__input-group">
-                <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-                required
-                minlength="2"
-              />
+              <div class="footer__input-main-group">
+                <div class="footer__input-group">
+                  <input
+                    type="text"
+                    class="input footer__input"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    required
+                    minlength="2"
+                  />
+                </div>
+                <div class="footer__input-group">
+                  <input
+                    type="tel"
+                    id="footer__input-phone"
+                    class="input footer__input"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    minlength="16"
+                    required
+                  />
+                </div>
               </div>
-              <div class="footer__input-group">
-                <input
-                type="tel"
-                id="footer__input-phone"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-                minlength="16"
-                required
-              />
-              </div>
+
               <textarea
                 cols="30"
                 rows="10"
@@ -974,7 +1099,12 @@ of chamarel"
                 placeholder="Message"
                 name="message"
               ></textarea>
-              <input class="button footer__button" type="submit" name="Send2" value="Send">
+              <input
+                class="button footer__button"
+                type="submit"
+                name="Send2"
+                value="Send"
+              />
               <span class="footer__info">* Required Fields</span>
             </form>
           </div>
@@ -1002,50 +1132,55 @@ of chamarel"
       <!-- /.container -->
     </footer>
     <!-- /footer.footer -->
-    
+
     <div class="modal" id="booking-modal">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
         <a href="#" class="modal__close">
-          <img src="img/close.svg" alt="Icon: close" >
+          <img src="img/close.svg" alt="Icon: close" />
         </a>
         <h3 class="modal__title modal__title--mb3">booking</h3>
-            <form action="send.php" method="POST" class="modal__form form">
-              <input
-                type="text"
-                class="input modal__input"
-                placeholder="Your Full Name*"
-                name="name_modal"
-                required
-                minlength="2"
-              />
-              <input
-                type="tel"
-                class="input modal__input"
-                placeholder="Phone Number*"
-                id="modal__input-phone"
-                minlength="16"
-                name="phone_modal"
-                required
-              />
-              <input
-                type="email"
-                class="input modal__input"
-                placeholder="Email*"
-                name="email_modal"
-                required
-              />
-              <textarea
-                cols="30"
-                rows="10"
-                class="message modal__message"
-                placeholder="Message"
-                name="message_modal"
-              ></textarea>
-              <input class="button modal__button" type="submit" name="Send-modal" value="Send">
-              <span class="modal__info">* Required Fields</span>
-            </form>
+        <form action="send.php" method="POST" class="modal__form form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name_modal"
+            required
+            minlength="2"
+          />
+          <input
+            type="tel"
+            class="input modal__input"
+            placeholder="Phone Number*"
+            id="modal__input-phone"
+            minlength="16"
+            name="phone_modal"
+            required
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email_modal"
+            required
+          />
+          <textarea
+            cols="30"
+            rows="10"
+            class="message modal__message"
+            placeholder="Message"
+            name="message_modal"
+          ></textarea>
+          <input
+            class="button modal__button"
+            type="submit"
+            name="Send-modal"
+            value="Send"
+          />
+          <span class="modal__info">* Required Fields</span>
+        </form>
       </div>
       <!-- /.modal__dialog -->
     </div>
@@ -1056,6 +1191,7 @@ of chamarel"
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/parallax.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

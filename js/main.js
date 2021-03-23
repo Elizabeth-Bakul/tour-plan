@@ -126,6 +126,7 @@ $(document).ready(function () {
     },
   });
 
+  //маска
   $("#footer__input-phone").mask('+7(999)999-99-99',
   {
     'translation':{9:{pattern:/[0-9]/, optional: false}},
@@ -133,4 +134,7 @@ $(document).ready(function () {
   $("#modal__input-phone").mask("+7(999)999-99-99", {
     translation: { 9: { pattern: /[0-9]/, optional: false } },
   });
+
+//анимация
+AOS.init();
 });
